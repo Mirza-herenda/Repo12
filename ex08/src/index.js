@@ -24,8 +24,9 @@ var contacts = [
         "likes": ["JavaScript", "Node", "HTML & CSS"]
     }
 ];
-
 function lookUpProfile(name, prop) {
+    // Only change code below this line
+
     let firstName = false;
     let property = false;
     for (let i = 0; i < contacts.length; i++) {
@@ -37,17 +38,18 @@ function lookUpProfile(name, prop) {
             }
         }
     }
-
     if (!firstName) {
         return "No such contact";
     } else {
         return "No such property";
     }
-
 }
+// Only change code above this line
 
 console.log(lookUpProfile("John", "likes"));
 console.log(lookUpProfile("Jane", "lastName"));
 console.log(lookUpProfile("Rob", "number"));
 console.log(lookUpProfile("Rob", "JavaScript"));
 console.log(lookUpProfile("John", "address"));
+
+module.exports = lookUpProfile;

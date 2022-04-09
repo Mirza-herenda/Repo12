@@ -1,10 +1,14 @@
 function sumFibonacci(num) {
 
-    var prevNum = 0;
-    var currNum = 1;
+    var prevNum = 1;
+    var currNum = 0;
     var result = 0;
 
-    while (currNum <= num) {
+    if(num===1)
+    {
+        return num;
+    }
+    while (currNum <=num) {
         if (currNum % 2 !== 0) {
             result += currNum;
         }
@@ -21,3 +25,4 @@ console.log(sumFibonacci(4));
 console.log(sumFibonacci(-5));
 
 module.exports = sumFibonacci;
+

@@ -1,22 +1,21 @@
-function myNes()
- {
-    var myStorage = {
-    "car": {
-    "inside": {
-    "glove box": "maps",
-    "passenger seat": "crumbs"
-    },
-    "outside": {
-    "trunk": "jack"
-    }
-    }
-    };
+function myNes() {
+   var myStorage = {
+       "car": {
+           "inside": {
+               "glove box": "maps",
+               "passenger seat": "crumbs"
+           },
+           "outside": {
+               "trunk": "jack"
+           }
+       }
+   };
 
-    var glovoBoxContents;
-    glovoBoxContents=myStorage.car.inside["glove box"];
-    return glovoBoxContents;
+   var gloveBoxContents;
+   gloveBoxContents = myStorage.car.inside["glove box"];
+   return gloveBoxContents;
 
 
-    }
-    console.log(myNes());
-    module.exports = myNes;
+}
+console.log(myNes());
+module.exports = myNes;
